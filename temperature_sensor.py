@@ -31,22 +31,3 @@ def process_temperatures(temp_list):
     avg_temp = round(statistics.mean(valid_temps), 2)
 
     return f"Min: {min_temp}°C, Max: {max_temp}°C, Avg: {avg_temp}°C"
-
-# test_cases = [
-#     [20], 
-#     [15,35],
-#     [],
-#     [10,-10,30],
-#     [-50,20,150,25],
-#     [10, "abc",30],
-#     [2**31 -1, -2**31],
-#     [10,10,10]
-# ]
-
-# # Running the test cases
-# for i, case in enumerate(test_cases, start=1):
-#     print(f"Test Case {i}: {case}")
-#     print(process_temperatures(case))
-#     print("-" * 40)
-
-print(process_temperatures( []))
